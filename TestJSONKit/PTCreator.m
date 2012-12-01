@@ -241,7 +241,8 @@ static NSString *pathOfDir = @"/Users/shaaowei/Desktop/Http/pt";
         [mDic setObject:[NSString stringWithFormat:@"这是话题描述_%d_%@",arc4random()%10000,descriptOfTopic] forKey:@"descriptionOfTopic"];
 //        [mDic setObject:[NSString stringWithFormat:@"这是话题内容_%d_%@",arc4random()%10000,contentOfTopic] forKey:@"content"];
         [mDic setObject:[arrOfPicURL objectAtIndex:(arc4random()%[arrOfPicURL count])] forKey:@"picURL"];
-        [mDic setObject:@"http://192.168.10.171/pt/Topic.html" forKey:@"contentURL"];
+//        [mDic setObject:@"http://192.168.10.171/pt/Topic.html" forKey:@"contentURL"];
+        [mDic setObject:@"http://www.pt.com/pt/Topic.html" forKey:@"contentURL"];
         
         //音频
         if (arc4random()%2) {
