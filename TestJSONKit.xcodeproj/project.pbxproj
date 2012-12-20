@@ -23,8 +23,9 @@
 		7F3600E5163633110022F81C /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7F3600DE163633110022F81C /* readme.txt */; };
 		7F3600E6163633110022F81C /* ZipArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7F3600E0163633110022F81C /* ZipArchive.mm */; };
 		7F3600E9163633240022F81C /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F3600E8163633240022F81C /* libz.1.2.5.dylib */; };
-		7FEA690A1655D67D00EFADFF /* PTCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FEA69091655D67D00EFADFF /* PTCreator.m */; };
-		7FEA690E1655D6A800EFADFF /* IATestCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FEA690D1655D6A800EFADFF /* IATestCreator.m */; };
+		7FE745001682E95600188B36 /* IATestCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE744FB1682E95600188B36 /* IATestCreator.m */; };
+		7FE745011682E95600188B36 /* PTCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE744FD1682E95600188B36 /* PTCreator.m */; };
+		7FE745021682E95600188B36 /* SIP2Creator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE744FF1682E95600188B36 /* SIP2Creator.m */; };
 		7FEA691D1655E13F00EFADFF /* CommonFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FEA691C1655E13F00EFADFF /* CommonFunction.m */; };
 /* End PBXBuildFile section */
 
@@ -57,10 +58,13 @@
 		7F3600DF163633110022F81C /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
 		7F3600E0163633110022F81C /* ZipArchive.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZipArchive.mm; sourceTree = "<group>"; };
 		7F3600E8163633240022F81C /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
-		7FEA69081655D67D00EFADFF /* PTCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTCreator.h; sourceTree = "<group>"; };
-		7FEA69091655D67D00EFADFF /* PTCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTCreator.m; sourceTree = "<group>"; };
-		7FEA690C1655D6A800EFADFF /* IATestCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IATestCreator.h; sourceTree = "<group>"; };
-		7FEA690D1655D6A800EFADFF /* IATestCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IATestCreator.m; sourceTree = "<group>"; };
+		7FE744FA1682E95600188B36 /* IATestCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IATestCreator.h; sourceTree = "<group>"; };
+		7FE744FB1682E95600188B36 /* IATestCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IATestCreator.m; sourceTree = "<group>"; };
+		7FE744FC1682E95600188B36 /* PTCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTCreator.h; sourceTree = "<group>"; };
+		7FE744FD1682E95600188B36 /* PTCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTCreator.m; sourceTree = "<group>"; };
+		7FE744FE1682E95600188B36 /* SIP2Creator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIP2Creator.h; sourceTree = "<group>"; };
+		7FE744FF1682E95600188B36 /* SIP2Creator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIP2Creator.m; sourceTree = "<group>"; };
+		7FE745031682E9CE00188B36 /* CommonData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonData.h; sourceTree = "<group>"; };
 		7FEA691B1655E13F00EFADFF /* CommonFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonFunction.h; sourceTree = "<group>"; };
 		7FEA691C1655E13F00EFADFF /* CommonFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonFunction.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +115,8 @@
 		5CE4350D162659580040581F /* TestJSONKit */ = {
 			isa = PBXGroup;
 			children = (
+				7FE745031682E9CE00188B36 /* CommonData.h */,
+				7FE744F91682E91D00188B36 /* Creator */,
 				5CE43516162659580040581F /* YSYNAppDelegate.h */,
 				5CE43517162659580040581F /* YSYNAppDelegate.m */,
 				5CE43519162659580040581F /* YSYNViewController.h */,
@@ -118,10 +124,6 @@
 				5CE4351C162659580040581F /* YSYNViewController.xib */,
 				7FEA691B1655E13F00EFADFF /* CommonFunction.h */,
 				7FEA691C1655E13F00EFADFF /* CommonFunction.m */,
-				7FEA69081655D67D00EFADFF /* PTCreator.h */,
-				7FEA69091655D67D00EFADFF /* PTCreator.m */,
-				7FEA690C1655D6A800EFADFF /* IATestCreator.h */,
-				7FEA690D1655D6A800EFADFF /* IATestCreator.m */,
 				7F3600D3163633110022F81C /* ZipArchiveOld */,
 				5CE43524162659BD0040581F /* JSONKit */,
 				5CE4350E162659580040581F /* Supporting Files */,
@@ -174,6 +176,19 @@
 				7F3600DD163633110022F81C /* zip.h */,
 			);
 			path = minizip;
+			sourceTree = "<group>";
+		};
+		7FE744F91682E91D00188B36 /* Creator */ = {
+			isa = PBXGroup;
+			children = (
+				7FE744FA1682E95600188B36 /* IATestCreator.h */,
+				7FE744FB1682E95600188B36 /* IATestCreator.m */,
+				7FE744FC1682E95600188B36 /* PTCreator.h */,
+				7FE744FD1682E95600188B36 /* PTCreator.m */,
+				7FE744FE1682E95600188B36 /* SIP2Creator.h */,
+				7FE744FF1682E95600188B36 /* SIP2Creator.m */,
+			);
+			path = Creator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,9 +264,10 @@
 				7F3600E3163633110022F81C /* unzip.c in Sources */,
 				7F3600E4163633110022F81C /* zip.c in Sources */,
 				7F3600E6163633110022F81C /* ZipArchive.mm in Sources */,
-				7FEA690A1655D67D00EFADFF /* PTCreator.m in Sources */,
-				7FEA690E1655D6A800EFADFF /* IATestCreator.m in Sources */,
 				7FEA691D1655E13F00EFADFF /* CommonFunction.m in Sources */,
+				7FE745001682E95600188B36 /* IATestCreator.m in Sources */,
+				7FE745011682E95600188B36 /* PTCreator.m in Sources */,
+				7FE745021682E95600188B36 /* SIP2Creator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
